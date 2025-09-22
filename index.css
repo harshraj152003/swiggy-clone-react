@@ -1,3 +1,215 @@
-#h1{
-    color: red;
+/* General Body and Font Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* A light, soft background color */
+  color: #333;
+}
+
+/* Header and Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.nav-items > ul > li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-items > ul > li:hover {
+  color: #ff6347;
+}
+
+.login {
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid #ff6347;
+  color: #ff6347;
+  font-weight: 500;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+/* Search and Filter Section */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #ff6347;
+}
+
+.search button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #e55333;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #4CAF50; /* A contrasting color for the filter button */
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #45a049;
+}
+
+/* Restaurant Card and Container */
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Increased gap for better visual separation */
+  padding: 2rem;
+}
+
+.res-card {
+  width: 275px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.res-logo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.res-card-content {
+  padding: 1rem;
+  flex-grow: 1; /* Allows content to take up remaining space */
+}
+
+.res-card-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.res-card-content h4 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0.25rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.card-details .rating {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Footer */
+.footer-container {
+  border-top: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  padding: 2rem;
+  text-align: center;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-container footer {
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.5;
 }
