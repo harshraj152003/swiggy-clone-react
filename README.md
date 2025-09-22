@@ -1,4 +1,4 @@
-# My First React Project:🍔 A Food Ordering App UI Clone
+# 🍔 My React Food Delivery App
 
 This project is my initial practice with **React.js**. It's a UI clone of a food delivery application, built to help me learn and apply fundamental React concepts.
 
