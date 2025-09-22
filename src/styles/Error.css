@@ -1,0 +1,113 @@
+/*================================================================================*/
+/* Error.css                                                                      */
+/* A more compact version of the cute error page.                                 */
+/*================================================================================*/
+
+/* General Body Styling */
+body {
+    background-color: #ffe0b2;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+/* Error Container - Made more compact */
+.error-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px; /* Smaller border radius */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    max-width: 450px; /* Reduced max width */
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cat Image - Made smaller */
+.error-cat-image {
+    width: 150px; /* Significantly reduced image size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Reduced margin */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-5px) rotate(-3deg); }
+}
+
+/* Titles and Messages - Reduced font sizes */
+.error-title {
+    font-size: 2.5em; /* Reduced font size */
+    color: #ff7043;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.error-message,
+.error-sub-message {
+    font-size: 1em; /* Reduced font size */
+    color: #6a6a6a;
+    margin-bottom: 15px;
+}
+
+.error-sub-message {
+    font-size: 0.9em; /* Reduced font size */
+    font-style: italic;
+    color: #888;
+}
+
+/* Home Button - Made smaller */
+.home-button {
+    display: inline-block;
+    background-color: #ff7043;
+    color: #ffffff;
+    padding: 10px 20px; /* Smaller padding */
+    border-radius: 25px; /* Reduced border radius */
+    text-decoration: none;
+    font-size: 1em; /* Reduced font size */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-button:hover {
+    background-color: #e65c2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments - Even more compact for mobile */
+@media (max-width: 600px) {
+    .error-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    .error-cat-image {
+        width: 120px;
+    }
+    .error-title {
+        font-size: 2em;
+    }
+    .error-message,
+    .error-sub-message {
+        font-size: 0.9em;
+    }
+    .home-button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}

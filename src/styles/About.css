@@ -1,0 +1,165 @@
+/*================================================================================*/
+/* About.css                                                                     */
+/* A fun, cool, and dynamic stylesheet for the About page.                       */
+/*================================================================================*/
+
+/* General Body and Container Styles */
+body {
+  background: linear-gradient(135deg, #fceabb, #f8b500); 
+  font-family: 'Rubik', sans-serif; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Header Section */
+.about-header {
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Content & Sections */
+.about-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  color: #ff6b6b; /* Playful accent color */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.story-section {
+  margin-bottom: 40px;
+}
+
+/* "Why Choose Us?" Section */
+.perks-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.perk-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 20px;
+  width: 28%;
+  background-color: #fceabb;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perk-item:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perk-icon {
+  font-size: 3em;
+  margin-right: 20px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+.perk-text h3 {
+  font-size: 1.5em;
+  color: #ff6b6b;
+  margin: 0 0 5px 0;
+}
+
+.perk-text p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
+/* Footer & Call-to-Action */
+.about-footer {
+  margin-top: 50px;
+}
+
+.about-footer p {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.order-button {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.order-button:hover {
+  transform: translateY(-3px);
+  background-color: #e65555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+  .about-header h1 {
+    font-size: 2.5em;
+  }
+  .about-header p {
+    font-size: 1.2em;
+  }
+  .about-section h2 {
+    font-size: 2em;
+  }
+  .perks-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .perk-item {
+    width: 90%;
+  }
+}
