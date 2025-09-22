@@ -22,8 +22,6 @@ The app includes basic UI features of a food delivery service:
 * **Responsive Design**: The UI adapts to different screen sizes.
 * **Interactive Routing**: Navigate between the Home, About, and Contact pages seamlessly.
 * **Graceful Error Page**: A custom "404 Not Found" page for invalid routes.
-* **Live Search**: Filter restaurants by name.
-* **Top-Rated Filter**: A button to show only restaurants with a rating of 4.0 or higher.
 
 ---
 
