@@ -23,6 +23,11 @@ body {
   width: 150px;
 }
 
+.header-link{
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-items > ul {
   display: flex;
   list-style: none;
@@ -31,16 +36,22 @@ body {
   gap: 1.5rem;
 }
 
-.nav-items > ul > li {
+
+.nav-items > ul > li a {
   font-size: 1.1rem;
   font-weight: 500;
   color: #555;
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
-  cursor: pointer;
 }
 
-.nav-items > ul > li:hover {
+.nav-items > ul > li a:hover {
   color: #ff6347;
+}
+
+.nav-items > ul > li a.active-link {
+  color: #ff6347; 
+  font-weight: 700; 
 }
 
 .login {
@@ -176,6 +187,11 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.res-card-link {
+  text-decoration: none;
+  color: inherit; /* This makes the link text color match its parent container */
 }
 
 .card-details {

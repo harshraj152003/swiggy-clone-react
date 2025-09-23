@@ -5,7 +5,7 @@
 
 /* General container and typography */
 body {
-    background-color: #f4f6f8;
+    background: linear-gradient(135deg, #fceabb, #f8b500); 
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
 }
