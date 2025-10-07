@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
-const RestaurantCard = ({ resData }) => {
+export const RestaurantCard = ({ resData }) => {
   const { name, cuisines, costForTwo, avgRating, sla, cloudinaryImageId } = resData.info;
   const { deliveryTime } = sla;
 
@@ -28,4 +28,17 @@ const RestaurantCard = ({ resData }) => {
   );
 };
 
-export default RestaurantCard;
+// Higher order Component
+
+// input - RestrauntCard ==> O/P RestrauntCardPromoted
+
+export const withPromotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="promoted-card-container">
+        <label className="promoted-label">Promoted</label>
+        <RestaurantCard {...props}/>
+      </div>
+    )
+  }
+}

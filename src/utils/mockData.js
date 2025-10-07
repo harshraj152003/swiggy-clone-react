@@ -25,6 +25,7 @@ const resData = {
           "nextCloseTime": "2025-09-17 05:00:00",
           "opened": true
         },
+        "promoted":true,
         "badges": {},
         "isOpen": true,
         "type": "F",
@@ -113,6 +114,7 @@ const resData = {
             }
           ]
         },
+        "promoted":false,
         "isOpen": true,
         "type": "C",
         "badgesV2": {
@@ -192,6 +194,7 @@ const resData = {
           "lastMileTravelString": "1.1 km",
           "iconType": "ICON_TYPE_EMPTY"
         },
+        "promoted":true,
         "availability": {
           "nextCloseTime": "2025-09-17 03:00:00",
           "opened": true
@@ -256,6 +259,7 @@ const resData = {
           "lastMileTravelString": "1.6 km",
           "iconType": "ICON_TYPE_EMPTY"
         },
+        "promoted":false,
         "availability": {
           "nextCloseTime": "2025-09-17 06:55:00",
           "opened": true

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import resData from "../utils/mockData";
-import RestaurantCard from "./RestaurantCard";
+import { RestaurantCard, withPromotedLabel } from "./RestaurantCard";
 import { Link } from "react-router-dom";
 
 const Body = () => {
@@ -22,6 +22,10 @@ const Body = () => {
   //   console.log(jsonData);
 
   // };
+
+  const RestrauntCardPromoted = withPromotedLabel(RestaurantCard);
+
+  console.log(listOfRestaraunts);
 
   if (listOfRestaraunts.length === 0) {
     return <h1>Loading...</h1>;
@@ -71,7 +75,11 @@ const Body = () => {
             to={"/restaraunts/" + restaurant.info.id}
             key={restaurant.info.id}
           >
-            <RestaurantCard resData={restaurant} />
+            {restaurant.info.promoted ? (
+              <RestrauntCardPromoted resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>

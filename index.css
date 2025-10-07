@@ -236,3 +236,32 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+
+
+/* 1. Container for the HOC */
+.promoted-card-container {
+    position: relative; 
+    display: inline-block; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.promoted-card-container:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. The Label */
+.promoted-label {
+    position: absolute;     
+    top: 5px;       
+    left: 5px;      
+    
+    background-color: #008000; /* Green background */
+    color: white;             /* White text */
+    padding: 4px 8px;
+    border-radius: 4px;       /* Slightly rounded corners */
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;              /* Ensures the label is on top of the card */
+}
